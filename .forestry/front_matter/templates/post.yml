@@ -1,0 +1,73 @@
+---
+label: Post
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Meta Description
+  config:
+    wysiwyg: false
+    required: true
+    max: 160
+  default: ''
+- name: category
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - Flutter Widget
+    - Flutter Material
+    - Git
+    source:
+      type: simple
+      section: content
+      file: 
+      path: 
+  label: Category
+- type: text
+  name: menuTitle
+  label: Menu Title
+- type: text
+  name: subtitle
+  label: Sub Title
+- type: boolean
+  name: fullscreen
+  label: Full Screen
+  default: true
+- type: boolean
+  name: dartpad
+  label: Enable Dartpad
+  default: true
+- name: version
+  type: number
+  label: Version
+  description: ''
+  default: 
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: position
+  type: number
+  label: Position
+  description: ''
+  default: 1
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+    required: true
+- name: badge
+  type: text
+  config:
+    required: false
+  label: Badge
