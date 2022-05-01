@@ -1,0 +1,22 @@
+{
+  "name": "dashpro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "@nuxt/content-theme-docs": "https://gitpkg.now.sh/ictsolved/content/packages/theme-docs?dartpad",
+    "nuxt": "^2.15.8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "husky": "^7.0.4",
+    "push-dir": "^0.4.1"
+  }
+}

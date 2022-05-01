@@ -1,0 +1,8 @@
+{
+  "title": "Mega Dash",
+  "url": "https://megadash.dev",
+  "logo": {
+    "light": "/megadash-light.png",
+    "dark": "/megadash-dark.png"
+  }
+}
